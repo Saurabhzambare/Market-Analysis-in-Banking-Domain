@@ -4,6 +4,18 @@
 
 This repository contains a banking-marketing campaign analysis completed as a Scala and Apache Spark learning exercise. It uses Spark DataFrames and Spark SQL to explore customer attributes and campaign subscription outcomes, then demonstrates basic feature engineering and categorical indexing.
 
+## Dataset Attribution
+
+This project uses the [Bank Marketing dataset](https://archive.ics.uci.edu/dataset/222/bank+marketing) from the UCI Machine Learning Repository, corresponding to the original `bank-full.csv` file.
+
+- **Creators:** Moro, S., Rita, P., & Cortez, P.
+- **Dataset:** Bank Marketing
+- **Repository:** UCI Machine Learning Repository
+- **DOI:** [10.24432/C5K306](https://doi.org/10.24432/C5K306)
+- **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+For repository organization, `bank-full.csv` was renamed to [`data/bank-marketing-dataset.csv`](data/bank-marketing-dataset.csv). The dataset is attributed to its creators and is not presented as original work by this repository's author.
+
 ## Business Questions
 
 The analysis addresses the following questions:
@@ -43,7 +55,7 @@ The source script:
 ├── data/
 │   └── bank-marketing-dataset.csv
 ├── docs/
-│   ├── analysis-notes.md
+│   ├── analysis-notes.txt
 │   ├── problem-statement.docx
 │   └── images/
 │       └── spark-scala-output.png
