@@ -28,6 +28,23 @@ The analysis addresses the following questions:
 - How are successful subscriptions distributed across age and marital-status combinations?
 - How can age be grouped into categories for further analysis?
 
+## Recomputed subscription rates
+
+Rate = records with `y = yes` divided by all records in the same segment. The table was recomputed from the committed CSV. The age bands below cover the boundary ages consistently and are separate from the preserved original Spark UDF.
+
+| Segment | Subscriptions | Records | Rate |
+|---|---:|---:|---:|
+| All | 5289 | 45211 | 11.70% |
+| 56+ | 906 | 4900 | 18.49% |
+| married | 2755 | 27214 | 10.12% |
+| 33–55 | 2811 | 29200 | 9.63% |
+| single | 1912 | 12790 | 14.95% |
+| 20–32 | 1554 | 11064 | 14.05% |
+| divorced | 622 | 5207 | 11.95% |
+| Under 20 | 18 | 47 | 38.30% |
+
+Age and marital groupings are separate views of the same records. The under-20 segment has 47 records. These descriptive results do not establish an effect of age or marital status on subscription.
+
 ## Technologies
 
 - Scala
